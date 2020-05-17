@@ -1,0 +1,69 @@
+.loadingScreen {
+  background-color: $loading-screen-backgroundColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &__title {
+    width: 350px;
+    line-height: 50px;
+    text-align: center;
+    color: $loading-screen-title-color;
+    font-size: 3rem;
+    position: relative;
+    animation-name: fadeOut;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+
+    &::before, &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 15px;
+      height: 30px;
+      background-color: $loading-screen-squares;
+      animation-name: squaresMove;
+      animation-duration: 0.8s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes squaresMove {
+      0% {
+        height: 30px;
+        width: 15px;
+        left: 0;
+      }
+      50% {
+        height: 8px;
+        width: 50px;
+      }
+      100% {
+        left: 335px;
+        height: 30px;
+        width: 15px;
+      }
+    }
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+
+    }
+
+  }
+}

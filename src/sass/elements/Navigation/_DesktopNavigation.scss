@@ -1,0 +1,30 @@
+.desktop-header {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktop-logo {
+    font-size: 2vw;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+  .desktop-navigation {
+
+    &__list {
+      display: flex;
+
+      &-element {
+        display: block;
+        padding: 10px 20px;
+        font-size: 3vw;
+
+      }
+    }
+  }
+}

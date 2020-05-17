@@ -1,3 +1,13 @@
-h1 {
-  color: blue;
-}
+//settings
+@import "settings/mixins";
+@import "settings/variables";
+
+// generic
+@import "generic/reset";
+@import "generic/grid";
+@import "settings/base";
+
+//elements
+@import "elements/LoadingScreen/LoadingScreen";
+@import "elements/Navigation/MobileNavigation";
+@import "elements/Navigation/DesktopNavigation";

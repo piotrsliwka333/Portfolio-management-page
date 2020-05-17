@@ -1,0 +1,151 @@
+.mobile-header {
+  background: transparent;
+  border: 1px solid $navigation-list-background;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  @include desktop {
+    display: none;
+  }
+
+
+
+  .mobile-logo {
+    color: lightgray;
+    display: block;
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .hamburger-container {
+    z-index: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+    .hamburger {
+      width: 50px;
+      height: 6px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(255,101,47,.2);
+      transition: all .5s ease-in-out;
+      position: relative;
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+      }
+      &::before {
+        transform: translateY(-16px);
+      }
+
+      &::after {
+        transform: translateY(16px);
+      }
+    }
+
+  }
+
+
+
+
+
+  // animation
+
+  .hamburger-container.open {
+
+    .hamburger {
+      transform: translateX(-50px);
+      background: transparent;
+      box-shadow: none;
+
+      &::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+      &::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      }
+    }
+  }
+
+  .mobile-navigation {
+    position: absolute;
+    background: transparent;
+    border-top: 3px solid $navigation-list-background;
+    border-right: 3px solid $navigation-list-background;
+    border-bottom: 3px solid $navigation-list-background;
+
+    width: 40vw;
+    height: 100vh;
+    color: #cccccc;
+    left: -40vw;
+    top: 0;
+    flex-direction: column;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    &__list {
+      margin-top: 47px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      li {
+        width: 100%;
+      }
+      &-element {
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding: 20px 0;
+        font-size: 2rem;
+        color: black;
+        border-bottom: 2px solid #151515;
+      }
+
+      &-element:hover {
+        background-color: rgba(16,172,132,0.7);
+      }
+
+      &-element:active {
+        background-color: rgba(16,172,132,0.9);
+      }
+
+
+    }
+
+
+    //slide from left animation
+    @keyframes slideShow {
+      0% {
+        left: -40vw;
+      }
+      100% {
+        left: -1vw;
+      }
+    }
+    @keyframes slideHide {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: -40vw;
+      }
+
+    }
+
+  }
+}
