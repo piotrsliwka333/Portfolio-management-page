@@ -2,9 +2,12 @@
   display: none;
 
   @include desktop {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: transparent;
+    width: 100%;
   }
 
   .desktop-logo {
@@ -12,6 +15,7 @@
     position: absolute;
     left: 10px;
     top: 10px;
+    color: lightslategray;
   }
 
   .desktop-navigation {
@@ -22,8 +26,14 @@
       &-element {
         display: block;
         padding: 10px 20px;
-        font-size: 3vw;
+        font-size: 1.8vw;
+        color: white;
+        cursor: pointer;
 
+      }
+
+      &-element:hover {
+        color: #38ada9;
       }
     }
   }

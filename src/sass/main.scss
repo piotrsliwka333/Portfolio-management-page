@@ -8,6 +8,13 @@
 @import "settings/base";
 
 //elements
+
+// loading screen
 @import "elements/LoadingScreen/LoadingScreen";
+
+// header
 @import "elements/Navigation/MobileNavigation";
 @import "elements/Navigation/DesktopNavigation";
+
+//main
+@import "elements/Main/HomeSection";

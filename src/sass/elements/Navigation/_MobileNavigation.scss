@@ -80,13 +80,12 @@
 
   .mobile-navigation {
     position: absolute;
-    background: transparent;
     border-top: 3px solid $navigation-list-background;
     border-right: 3px solid $navigation-list-background;
     border-bottom: 3px solid $navigation-list-background;
+    background-color: rgba(0,0,0,0.1);
 
     width: 40vw;
-    height: 100vh;
     color: #cccccc;
     left: -40vw;
     top: 0;
@@ -112,7 +111,7 @@
         display: block;
         padding: 20px 0;
         font-size: 2rem;
-        color: black;
+        color: $navigation-list-element-color;
         border-bottom: 2px solid #151515;
       }
 

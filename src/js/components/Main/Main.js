@@ -1,11 +1,13 @@
 import React from "react";
+import {HomeSection} from "./HomeSection";
 
 
 export const Main = () => {
 
 
-
-	return(
-		<h1>dsdas</h1>
+	return (
+		<main>
+			<HomeSection/>
+		</main>
 	)
 }
