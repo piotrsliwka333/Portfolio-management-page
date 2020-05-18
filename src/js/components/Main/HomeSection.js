@@ -12,7 +12,7 @@ export const HomeSection = () => {
 				<h1 className="home-title">Hi, My name is <span className="contrast">Piotr Śliwka</span></h1>
 				<div className='home-box'>
 					<p className="home-text">and...</p>
-					<a className="home-arrow">
+					<a href="#about" className="home-arrow">
 						<i className="fas fa-arrow-right"/>
 					</a>
 				</div>

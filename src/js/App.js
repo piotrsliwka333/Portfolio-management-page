@@ -11,13 +11,13 @@ import {Main} from "./components/Main/Main";
 
 
 const App = () => {
-	const [dataLoading,setDataLoading] = useState(true)
+	const [dataLoading,setDataLoading] = useState(false)
 
-	useEffect(() => {
-		const timeOut = setTimeout(()=> {
-			setDataLoading(false)
-		},3000)
-	},[])
+	// useEffect(() => {
+	// 	const timeOut = setTimeout(()=> {
+	// 		setDataLoading(false)
+	// 	},3000)
+	// },[])
 
 	return (
 		<>
