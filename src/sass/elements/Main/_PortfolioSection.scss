@@ -1,0 +1,105 @@
+.portfolio {
+  background-color: whitesmoke;
+
+  .portfolio__title {
+    font-size: 5rem;
+    text-align: center;
+    padding: 40px 0;
+    font-weight: bold;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 120px;
+      height: 2px;
+      margin: 20px auto 0 auto;
+      background-color: black;
+
+    }
+
+  }
+
+  .container {
+    max-width: 1400px;
+
+    .row {
+      justify-content: center;
+
+      .project-box {
+        position: relative;
+        margin: 20px 40px;
+
+        &__container {
+          height: 0;
+          position: relative;
+          padding: 30%;
+          width: 100%;
+
+          &__photo {
+            box-shadow: $projects-box-shadow;
+            border-radius: 15px;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+
+          }
+        }
+
+        &__description {
+          transition: 0.5s;
+          background-color: rgba(0,0,0,0.6);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 15px;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+
+          &__title {
+            font-size: 2rem;
+          }
+
+          &__technologies {
+            text-align: center;
+            text-shadow: 1px 1px 3px black;
+            width: 60%;
+            font-size: 2rem;
+            color: #1dd1a1;
+            font-weight: bold;
+            margin: 20px 0;
+            line-height: 3rem;
+          }
+
+          &__btn {
+            text-decoration: none;
+            transition: 0.5s;
+            cursor: pointer;
+            margin: 0 10px;
+            width: 100px;
+            height: 40px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.7rem;
+            border: 2px solid #38ada9;
+            font-weight: bold;
+            color: black;
+
+            &:hover {
+              background-color: #1dd1a1;
+              color: #151515;
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+
+}
