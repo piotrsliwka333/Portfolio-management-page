@@ -1,4 +1,5 @@
 import React from "react";
+import {Link as LinkScroll} from "react-scroll";
 
 export const AboutFirstSection = () => {
 
@@ -15,9 +16,10 @@ export const AboutFirstSection = () => {
 				<br/>
 				<span className="about-first__frame-highlight">Front-end Developer</span>
 				<div href="#" className='about-first__frame-box'>
-					<a className="about-first__frame-box-arrow">
+					<LinkScroll to='about-second' duration={1000}
+					            className="about-first__frame-box-arrow">
 						<i className="fas fa-arrow-right"/>
-					</a>
+					</LinkScroll>
 				</div>
 			</div>
 
