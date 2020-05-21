@@ -1,5 +1,5 @@
 {
-  "name": "FE_REACT_React",
+  "name": "Portfolio",
   "version": "1.0.0",
   "description": "<img alt=\"Logo\" src=\"https://coderslab.pl/svg/logo-coderslab.svg\" width=\"400\">",
   "main": "index.js",
@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --hot -d",
     "build": "webpack -p",
-    "rest": "json-server --watch --port=3011 ./src/js/JSON/people.json"
+    "rest": "json-server --watch --port=3011 ./src/js/JSON/people.json",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CodersLab-core/FE_REACT_React/issues"
+    "url": "https://piotrsliwka333.github.io/Portfolio-management-page"
   },
   "browserslist": [
     "> 1%",
@@ -26,7 +27,7 @@
     "Firefox > 20",
     "since 2015"
   ],
-  "homepage": "https://github.com/CodersLab-core/FE_REACT_React#readme",
+  "homepage": "https://piotrsliwka333.github.io/Portfolio-management-page",
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
