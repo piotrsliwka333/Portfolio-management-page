@@ -39,7 +39,7 @@ module.exports = {
 				exclude: /node_modules/,
 				use: [
 					'style-loader',
-					// MiniCSS.loader,
+					MiniCSS.loader,
 					{
 						loader:'css-loader',
 						options: {
