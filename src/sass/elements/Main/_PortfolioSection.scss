@@ -48,6 +48,7 @@
         }
 
         &__description {
+          cursor: pointer;
           transition: 0.5s;
           background-color: rgba(0,0,0,0.6);
           display: flex;

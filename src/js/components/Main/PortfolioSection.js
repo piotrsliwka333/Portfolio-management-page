@@ -1,14 +1,44 @@
 import React, {useState} from "react";
+import {PortfolioProject} from "./PortfolioProject";
 
 
 export const PortfolioSection = () => {
 	const [covid,setCovid] = useState(false)
+	const [lumber,setLumber] = useState(false)
+	const [bestShop,setBestShop] = useState(false)
+	const [meal,setMeal] = useState(false)
+	const [portfolio,setPortfolio] = useState(false)
 
-	const handleChangeHover = () => {
+
+	const handleShowCovid = () => {
 		setCovid(true)
 	}
-	const handleMouseLeave = () => {
+	const handleHideCovid = () => {
 		setCovid(false)
+	}
+	const handleShowBestShop = () => {
+		setBestShop(true)
+	}
+	const handleHideBestShop = () => {
+		setBestShop(false)
+	}
+	const handleShowLumber = () => {
+		setLumber(true)
+	}
+	const handleHideLumber = () => {
+		setLumber(false)
+	}
+	const handleShowMeal = () => {
+		setMeal(true)
+	}
+	const handleHideMeal = () => {
+		setMeal(false)
+	}
+	const handleShowPortfolio = () => {
+		setPortfolio(true)
+	}
+	const handleHidePortfolio = () => {
+		setPortfolio(false)
 	}
 
 
@@ -17,47 +47,48 @@ export const PortfolioSection = () => {
 			<h6 className='portfolio__title'>Portfolio</h6>
 			<div className='container'>
 				<div className='row'>
-					<div onMouseEnter={handleChangeHover} onMouseLeave={handleMouseLeave} className='project-box col-10 col-md-10 col-xl-4'>
-						<figure className='project-box__container'>
-							<img src='../../../images/convid19.png' className="project-box__container__photo"/>
-						</figure>
-						{covid &&
-						<>
-							<div className='project-box__description'>
-								<p className='project-box__description__title'>Technologies:</p>
-								<p className='project-box__description__technologies'>SASS/REACT/ES6/REACT ROUTER/RWD/WEBPACK</p>
-								<div>
-									<a className='project-box__description__btn'>Live</a>
-									<a href='https://github.com/piotrsliwka333/Project-COVID19' target='_blank' className='project-box__description__btn'>GitHub</a>
-								</div>
-							</div>
-						</>
-						}
-					</div>
-					<div className='project-box col-10 col-md-10 col-xl-4'>
-						<figure className='project-box__container'>
-							<img src='../../../images/BestShop.png' className="project-box__container__photo"/>
-						</figure>
-					</div>
-					<div className='project-box col-10 col-md-10 col-xl-4'>
-						<figure className='project-box__container'>
-							<img src='../../../images/Lumber.png' className="project-box__container__photo"/>
-						</figure>
-					</div>
-					<div className='project-box col-10 col-md-10 col-xl-4'>
-						<figure className='project-box__container'>
-							<img src='../../../images/Schedule%20your%20meal.png' className="project-box__container__photo"/>
-						</figure>
-					</div>
-					<div className='project-box col-10 col-md-10 col-xl-4'>
-						<figure className='project-box__container'>
-							<img src='../../../images/Portfolio.png' className="project-box__container__photo"/>
-						</figure>
-					</div>
+					<PortfolioProject project={covid}
+														technologies={'SASS/REACT/ES6/REACT ROUTER/RWD/WEBPACK'}
+														linkLive={'https://github.com/piotrsliwka333/Project-COVID19'}
+													  linkGithub={'https://github.com/piotrsliwka333/Project-COVID19'}
+													  show={handleShowCovid}
+													  hide={handleHideCovid}
+													  picture={'convid19.png'}
+					/>
+					<PortfolioProject project={bestShop}
+					                  technologies={'SASS/REACT/RWD/GULP'}
+					                  linkLive={'https://github.com/piotrsliwka333/Project-COVID19'}
+					                  linkGithub={'https://github.com/piotrsliwka333/Project-COVID19'}
+					                  show={handleShowBestShop}
+					                  hide={handleHideBestShop}
+					                  picture={'BestShop.png'}
+					/>
+					<PortfolioProject project={lumber}
+					                  technologies={'SASS/REACT/RWD/GULP'}
+					                  linkLive={'https://github.com/piotrsliwka333/Project-COVID19'}
+					                  linkGithub={'https://github.com/piotrsliwka333/Project-COVID19'}
+					                  show={handleShowLumber}
+					                  hide={handleHideLumber}
+					                  picture={'Lumber.png'}
+					/>
+					<PortfolioProject project={meal}
+					                  technologies={'SASS/REACT/RWD/GULP'}
+					                  linkLive={'https://github.com/piotrsliwka333/Project-COVID19'}
+					                  linkGithub={'https://github.com/piotrsliwka333/Project-COVID19'}
+					                  show={handleShowMeal}
+					                  hide={handleHideMeal}
+					                  picture={'Schedule%20your%20meal.png'}
+					/>
+					<PortfolioProject project={portfolio}
+					                  technologies={'SASS/REACT/RWD/GULP'}
+					                  linkLive={'https://github.com/piotrsliwka333/Project-COVID19'}
+					                  linkGithub={'https://github.com/piotrsliwka333/Project-COVID19'}
+					                  show={handleShowPortfolio}
+					                  hide={handleHidePortfolio}
+					                  picture={'Portfolio.png'}
+					/>
 				</div>
 			</div>
-
-
 		</section>
 	)
 }
