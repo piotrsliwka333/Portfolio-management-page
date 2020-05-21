@@ -1,0 +1,58 @@
+.contact {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+
+  &__title {
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  &__git-hub {
+    padding: 5px 0 20px 0;
+    display: block;
+    text-align: center;
+    font-size: 4.5rem;
+    color: white;
+    box-shadow: $projects-box-shadow;
+
+  }
+
+
+
+  .container {
+
+    .row {
+      justify-content: space-between;
+
+      .contact-box {
+
+
+
+        &__info {
+          margin: 20px 0;
+          color: #1dd1a1;
+          font-size: 2rem;
+
+          &__bold {
+            color: white;
+            font-size: 2.3rem;
+            font-weight: bold;
+          }
+        }
+        &__social {
+          text-align: left;
+          margin: 20px 0;
+          font-size: 2.3rem;
+          color: white;
+          text-decoration: none;
+          display: block;
+        }
+
+
+      }
+
+    }
+  }
+}

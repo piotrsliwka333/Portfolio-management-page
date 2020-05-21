@@ -7,6 +7,7 @@ import {MobileNavigation} from "./components/Header/MobileNavigation";
 import {Navigation} from "./components/Header/Navigation";
 import {HomeSection} from "./components/Main/HomeSection";
 import {Main} from "./components/Main/Main";
+import {Footer} from "./components/Footer/Footer";
 
 
 
@@ -25,6 +26,7 @@ const App = () => {
 				<>
 					<Navigation/>
 					<Main/>
+					<Footer/>
 				</>
 			)}
 		</>

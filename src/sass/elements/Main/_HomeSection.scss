@@ -80,16 +80,16 @@
   }
 
   @function multiple-shadow($n) {
-    $value: "#{random(4000)}px #{random(4000)}px #fff";
+    $value: "#{random(2000)}px #{random(2000)}px #fff";
     @for $i from 2 through $n {
-      $value: "#{$value}, #{random(4000)}px #{random(4000)}px #fff"
+      $value: "#{$value}, #{random(2000)}px #{random(2000)}px #fff"
     }
     @return unquote($value)
   }
 
-  $amount-of-shadow-boxes-small: multiple-shadow(200);
-  $amount-of-shadow-boxes-medium: multiple-shadow(600);
-  $amount-of-shadow-boxes-huge: multiple-shadow(1200);
+  $amount-of-shadow-boxes-small: multiple-shadow(100);
+  $amount-of-shadow-boxes-medium: multiple-shadow(300);
+  $amount-of-shadow-boxes-huge: multiple-shadow(600);
 
 
   .stars {

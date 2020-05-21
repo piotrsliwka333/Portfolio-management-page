@@ -3,7 +3,7 @@
   border: 1px solid $navigation-list-background;
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   width: 100%;
   @include desktop {
     display: none;
@@ -79,15 +79,16 @@
   }
 
   .mobile-navigation {
+    z-index: 1000;
     position: absolute;
     border-top: 3px solid $navigation-list-background;
     border-right: 3px solid $navigation-list-background;
     border-bottom: 3px solid $navigation-list-background;
     background-color: rgba(0,0,0,0.1);
 
-    width: 40vw;
+    width: 80vw;
     color: #cccccc;
-    left: -40vw;
+    left: -80vw;
     top: 0;
     flex-direction: column;
     animation-duration: 0.3s;
@@ -130,7 +131,7 @@
     //slide from left animation
     @keyframes slideShow {
       0% {
-        left: -40vw;
+        left: -80vw;
       }
       100% {
         left: -1vw;
@@ -141,7 +142,7 @@
         left: 0;
       }
       100% {
-        left: -40vw;
+        left: -80vw;
       }
 
     }

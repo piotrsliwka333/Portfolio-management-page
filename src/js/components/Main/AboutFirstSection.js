@@ -16,8 +16,7 @@ export const AboutFirstSection = () => {
 				<br/>
 				<span className="about-first__frame-highlight">Front-end Developer</span>
 				<div href="#" className='about-first__frame-box'>
-					<LinkScroll to='about-second' duration={1000}
-					            className="about-first__frame-box-arrow">
+					<LinkScroll to='about-second' className="about-first__frame-box-arrow">
 						<i className="fas fa-arrow-right"/>
 					</LinkScroll>
 				</div>
