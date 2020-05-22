@@ -8,7 +8,7 @@ export const AboutFirstSection = () => {
 		<section className="about-first" id='about'>
 			<div className="photo-container">
 				<figure className="photo-container-box">
-					<img  className="photo__hero" src='../../../images/photo_hero.png'/>
+					<img  className="photo__hero" src='./././images/photo_hero.png'/>
 				</figure>
 			</div>
 			<div className="about-first__frame">
