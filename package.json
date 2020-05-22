@@ -18,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://piotrsliwka333.github.io/Portfolio-management-page"
+    "url": "git+https://github.com/CodersLab-core/FE_REACT_React.git"
   },
   "browserslist": [
     "> 1%",
@@ -27,7 +27,7 @@
     "Firefox > 20",
     "since 2015"
   ],
-  "homepage": "https://piotrsliwka333.github.io/Portfolio-management-page",
+  "homepage": "git+https://github.com/CodersLab-core/FE_REACT_React.git",
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
