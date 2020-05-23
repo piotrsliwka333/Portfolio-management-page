@@ -7,7 +7,7 @@ export const PortfolioProject = (props) => {
 
 
 	return (
-		<div onMouseEnter={show} onMouseLeave={hide} className='project-box col-10 col-md-10 col-xl-4'>
+		<div onMouseEnter={show} onMouseLeave={hide} className='project-box col-10 col-md-10 col-xl-3'>
 			<figure className='project-box__container'>
 				<img src={`../../../images/${picture}`} className="project-box__container__photo"/>
 			</figure>

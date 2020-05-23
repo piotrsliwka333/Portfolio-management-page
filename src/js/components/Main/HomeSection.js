@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link as LinkScroll} from "react-scroll"
 
 export const HomeSection = () => {
 
@@ -10,12 +10,14 @@ export const HomeSection = () => {
 			<div className="stars2"/>
 			<div className="home-text-container">
 				<h1 className="home-title">Hi, My name is <span className="contrast">Piotr Śliwka</span></h1>
-				<div className='home-box'>
+				<LinkScroll to='about' className='home-box'>
 					<p className="home-text">and...</p>
-					<a href="#about" className="home-arrow">
-						<i className="fas fa-arrow-right"/>
-					</a>
-				</div>
+					<div className='home-arrow'>
+						<span>
+							<i className="fas fa-arrow-right"/>
+						</span>
+					</div>
+				</LinkScroll>
 			</div>
 		</section>
 	)

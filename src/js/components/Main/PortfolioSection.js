@@ -43,7 +43,7 @@ export const PortfolioSection = () => {
 
 
 	return (
-		<section className='portfolio'>
+		<section className='portfolio' id='portfolio'>
 			<h6 className='portfolio__title'>Portfolio</h6>
 			<div className='container'>
 				<div className='row'>
@@ -57,8 +57,8 @@ export const PortfolioSection = () => {
 					/>
 					<PortfolioProject project={bestShop}
 					                  technologies={'SASS/REACT/RWD/GULP'}
-					                  linkLive={'https://github.com/piotrsliwka333/Project-COVID19'}
-					                  linkGithub={'https://github.com/piotrsliwka333/Project-COVID19'}
+					                  linkLive={'https://piotrsliwka333.github.io/03-CL-WorkShop-RWD/'}
+					                  linkGithub={'https://github.com/piotrsliwka333/03-CL-WorkShop-RWD'}
 					                  show={handleShowBestShop}
 					                  hide={handleHideBestShop}
 					                  picture={'BestShop.png'}
@@ -66,7 +66,7 @@ export const PortfolioSection = () => {
 					<PortfolioProject project={lumber}
 					                  technologies={'SASS/REACT/RWD/GULP'}
 					                  linkLive={'https://github.com/piotrsliwka333/Project-COVID19'}
-					                  linkGithub={'https://github.com/piotrsliwka333/Project-COVID19'}
+					                  linkGithub={'https://github.com/piotrsliwka333/Homemade-Lumber-Project'}
 					                  show={handleShowLumber}
 					                  hide={handleHideLumber}
 					                  picture={'Lumber.png'}
@@ -81,11 +81,11 @@ export const PortfolioSection = () => {
 					/>
 					<PortfolioProject project={portfolio}
 					                  technologies={'SASS/REACT/RWD/GULP'}
-					                  linkLive={'https://github.com/piotrsliwka333/Project-COVID19'}
-					                  linkGithub={'https://github.com/piotrsliwka333/Project-COVID19'}
+					                  linkLive={'https://piotrsliwka333.github.io/Portfolio-management-page/'}
+					                  linkGithub={'https://github.com/piotrsliwka333/Portfolio-management-page'}
 					                  show={handleShowPortfolio}
 					                  hide={handleHidePortfolio}
-					                  picture={'Portfolio.png'}
+					                  picture={'peter.png'}
 					/>
 				</div>
 			</div>

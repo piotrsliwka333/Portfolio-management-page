@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import {HashLink} from 'react-router-hash-link';
-
+import {Link as LinkScroll} from "react-scroll"
 export const MobileNavigation = () => {
 	const [menuOpen,setMenuOpen] = useState(false)
 
@@ -27,10 +27,10 @@ export const MobileNavigation = () => {
 			</div>
 			<nav style={style} className={'mobile-navigation'}>
 				<ul className="mobile-navigation__list">
-					<li><a onClick={handleOpenMenu} className="mobile-navigation__list-element">Home</a></li>
-					<li><a onClick={handleOpenMenu} className="mobile-navigation__list-element">About</a></li>
-					<li><a onClick={handleOpenMenu} className="mobile-navigation__list-element">Portfolio</a></li>
-					<li><a onClick={handleOpenMenu} className="mobile-navigation__list-element">Contact</a></li>
+					<li><LinkScroll to='home' onClick={handleOpenMenu} className="mobile-navigation__list-element">Home</LinkScroll></li>
+					<li><LinkScroll to='about' smooth={true} duration={300} onClick={handleOpenMenu} className="mobile-navigation__list-element">About</LinkScroll></li>
+					<li><LinkScroll to='portfolio' smooth={true} duration={300} onClick={handleOpenMenu} className="mobile-navigation__list-element">Portfolio</LinkScroll></li>
+					<li><LinkScroll to='contact' smooth={true} duration={300} onClick={handleOpenMenu} className="mobile-navigation__list-element">Contact</LinkScroll></li>
 				</ul>
 			</nav>
 		</header>

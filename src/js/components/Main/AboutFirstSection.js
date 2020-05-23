@@ -4,22 +4,27 @@ import {Link as LinkScroll} from "react-scroll";
 export const AboutFirstSection = () => {
 
 
-	return(
+	const style = {
+		maxWidth: '600px'
+	}
+	return (
 		<section className="about-first" id='about'>
 			<div className="photo-container">
 				<figure className="photo-container-box">
-					<img  className="photo__hero" src='./././images/photo_hero.png'/>
+					<img className="photo__hero" src='../../../images/me.png'/>
 				</figure>
 			</div>
 			<div className="about-first__frame">
 				<h2 className="about-first__frame-title">I want become a</h2>
 				<br/>
 				<span className="about-first__frame-highlight">Front-end Developer</span>
-				<div href="#" className='about-first__frame-box'>
-					<LinkScroll to='about-second' className="about-first__frame-box-arrow">
-						<i className="fas fa-arrow-right"/>
-					</LinkScroll>
-				</div>
+				<LinkScroll to='about-second' className='about-first__frame-box'>
+					<div className="about-first__frame-box-arrow">
+						<span>
+							<i className="fas fa-arrow-right"/>
+						</span>
+					</div>
+				</LinkScroll>
 			</div>
 
 

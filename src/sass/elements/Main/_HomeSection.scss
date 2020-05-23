@@ -32,11 +32,13 @@
       }
     }
     .home-box {
+      margin-top: 20px;
       width: 200px;
       display: flex;
-      padding: 5px 30px;
+      padding: 10px 30px;
       background: transparent;
       border: 2px solid white;
+      align-items: center;
       justify-content: space-between;
       cursor: pointer;
 

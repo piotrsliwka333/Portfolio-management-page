@@ -91,12 +91,12 @@ export const AboutSecondSection = () => {
 								</a>
 							</div>
 						</div>
-						<img src='../../../images/programing.jpg' className='programing'/>
+						<img src='../../../images/programer.png' className='programing'/>
 					</div>
 				</div>
 			</div>
 			<p className='sum-up'>Quoting Linus Torvalds ,,Talk is cheap.Show me the code.''</p>
-			<LinkScroll to='#' className='btn'>
+			<LinkScroll to='portfolio' smooth={true} duration={200} className='btn'>
 				<div>
 					<span>
 						<i className="fas fa-arrow-right"/>
