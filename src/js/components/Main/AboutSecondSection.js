@@ -1,5 +1,9 @@
 import React from "react";
 import {Link as LinkScroll} from "react-scroll"
+import {AboutSecondSliderElement} from "./AboutSecondSliderElement";
+import {AboutSecondSlider} from "./AboutSecondSlider";
+import {AboutSecondAboutMe} from "./AboutSecondAboutMe";
+import {AboutSecondCertificate} from "./AboutSecondCertificate";
 
 export const AboutSecondSection = () => {
 
@@ -9,63 +13,12 @@ export const AboutSecondSection = () => {
 	// (are site work faster so it is worth to do it)
 	return (
 		<section className="about-second" id='about-second'>
-			<article className='technology-slider'>
-				<ul className="technology-slider__content">
-					<li className="technology-slider__content-element">
-						<a>
-							<i className="fab fa-sass"/>
-						</a>
-						<span>SASS</span>
-					</li>
-					<li className="technology-slider__content-element">
-						<a>
-							<i className="fab fa-html5"/>
-						</a>
-						<span>HTML 5</span>
-					</li>
-					<li className="technology-slider__content-element">
-						<a>
-							<i className="fab fa-css3-alt"/>
-						</a>
-						<span>CSS 3</span>
-					</li>
-					<li className="technology-slider__content-element">
-						<a>
-							<i className="fab fa-react"/>
-						</a>
-						<span>React</span>
-					</li>
-					<li className="technology-slider__content-element">
-						<a>
-							<i className="fab fa-js-square"/>
-						</a>
-						<span>JavaScrip ECMA6 +</span>
-					</li>
-					<li className="technology-slider__content-element">
-						<a>
-							<i className="fab fa-github-square"/>
-						</a>
-						<span>Git Hub</span>
-					</li>
-					<li className="technology-slider__content-element"><span>WebStorm</span></li>
-					<li className="technology-slider__content-element"><span>WebPack</span></li>
-				</ul>
-			</article>
-			<p className='technology-slider-description'>Here you can check technologies which I use</p>
+			<AboutSecondSlider/>
 			<div className="container">
 				<div className="row">
 					<div className="col-11 col-md-8 col-xl-5 box">
-						<h3 className='about-me-title'>
-								Hi, I am Peter I've just finished
-								My bootcamp course in Coders Lab
-								and I am looking for a job as a
-								<br/><span> junior Front-end Developer</span>
-						</h3>
-						<div className="certificate-container">
-							<figure className='certificate-box'>
-								<img className='certificate' src='../../../images/Certificate.png'/>
-							</figure>
-						</div>
+						<AboutSecondAboutMe/>
+						<AboutSecondCertificate/>
 					</div>
 					<div className="col-11 col-md-8 col-xl-5">
 						<div className='my-hobbies'>
@@ -91,7 +44,7 @@ export const AboutSecondSection = () => {
 								</a>
 							</div>
 						</div>
-						<img src='../../../images/programer.png' className='programing'/>
+						<img src='../../../images/programer.png' alt='men who is programing' className='programing'/>
 					</div>
 				</div>
 			</div>

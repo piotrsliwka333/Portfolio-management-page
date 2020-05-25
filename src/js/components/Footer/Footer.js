@@ -6,7 +6,7 @@ export const Footer =() => {
 	return (
 		<footer className='contact' id='contact'>
 			<h6 className='contact__title'>Contact</h6>
-			<a className='contact__git-hub' href='https://github.com/piotrsliwka333'>
+			<a className='contact__git-hub' target='_blank' href='https://github.com/piotrsliwka333'>
 				<i className="fab fa-github"/>
 			</a>
 			<div className='container'>

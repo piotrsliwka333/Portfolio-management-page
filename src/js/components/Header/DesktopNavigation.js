@@ -1,30 +1,27 @@
 import React, {useState} from "react"
 import {HashLink} from 'react-router-hash-link';
 import {Link as LinkScroll} from "react-scroll"
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, HashRouter} from "react-router-dom";
+import {DesktopNavigationElement} from "./DesktopNavigationElement";
 
 export const DesktopNavigation = () => {
 
 
 	return (
 		<header className="desktop-header">
-			<BrowserRouter>
+			<HashRouter>
 			<a href='/' className='desktop-logo'>
 				<i className="fas fa-head-side-virus"/>
 			</a>
 			<nav className='desktop-navigation'>
 				<ul className="desktop-navigation__list">
-					<li><LinkScroll className="desktop-navigation__list-element"
-					                 smooth={true} duration={500} to='home'>Home</LinkScroll></li>
-					<li><LinkScroll className="desktop-navigation__list-element"
-					                smooth={true} duration={1000} to='about'>About</LinkScroll></li>
-					<li><LinkScroll className="desktop-navigation__list-element"
-					                duration={1500} smooth={true} to='portfolio'>Portfolio</LinkScroll></li>
-					<li><LinkScroll className="desktop-navigation__list-element"
-					                duration={2000} smooth={true} to='contact'>Contact</LinkScroll></li>
+					<DesktopNavigationElement name='Home' duration={300} direction='home'/>
+					<DesktopNavigationElement name='About' duration={300} direction='about'/>
+					<DesktopNavigationElement name='Portfolio' duration={300} direction='portfolio'/>
+					<DesktopNavigationElement name='Contact' duration={300} direction='contact'/>
 				</ul>
 			</nav>
-			</BrowserRouter>
+			</HashRouter>
 		</header>
 	)
 }

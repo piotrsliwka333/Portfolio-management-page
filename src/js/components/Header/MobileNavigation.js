@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import {HashLink} from 'react-router-hash-link';
 import {Link as LinkScroll} from "react-scroll"
+import {MobileNavigationElement} from "./MobileNavigationElement";
 export const MobileNavigation = () => {
 	const [menuOpen,setMenuOpen] = useState(false)
 
@@ -27,10 +28,10 @@ export const MobileNavigation = () => {
 			</div>
 			<nav style={style} className={'mobile-navigation'}>
 				<ul className="mobile-navigation__list">
-					<li><LinkScroll to='home' onClick={handleOpenMenu} className="mobile-navigation__list-element">Home</LinkScroll></li>
-					<li><LinkScroll to='about' smooth={true} duration={300} onClick={handleOpenMenu} className="mobile-navigation__list-element">About</LinkScroll></li>
-					<li><LinkScroll to='portfolio' smooth={true} duration={300} onClick={handleOpenMenu} className="mobile-navigation__list-element">Portfolio</LinkScroll></li>
-					<li><LinkScroll to='contact' smooth={true} duration={300} onClick={handleOpenMenu} className="mobile-navigation__list-element">Contact</LinkScroll></li>
+					<MobileNavigationElement name='Home' duration={300} openMenu={handleOpenMenu} direction='home'/>
+					<MobileNavigationElement name='About' duration={300} openMenu={handleOpenMenu} direction='about'/>
+					<MobileNavigationElement name='Portfolio' duration={300} openMenu={handleOpenMenu} direction='portfolio'/>
+					<MobileNavigationElement name='Contact' duration={300} openMenu={handleOpenMenu} direction='contact'/>
 				</ul>
 			</nav>
 		</header>
