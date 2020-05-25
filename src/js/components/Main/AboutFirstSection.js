@@ -1,17 +1,14 @@
 import React from "react";
 import {Link as LinkScroll} from "react-scroll";
+import hero from '../../../images/me.png'
 
 export const AboutFirstSection = () => {
 
-
-	const style = {
-		maxWidth: '600px'
-	}
 	return (
 		<section className="about-first" id='about'>
 			<div className="photo-container">
 				<figure className="photo-container-box">
-					<img className="photo__hero" alt='smiling young boy' src='../../../images/me.png'/>
+					<img className="photo__hero" alt='smiling young boy' src={hero}/>
 				</figure>
 			</div>
 			<div className="about-first__frame">
