@@ -1,4 +1,5 @@
 import React from "react";
+import CVFile from '../../../images/CV_Piotr_Śliwka (2).pdf'
 
 export const Footer =() => {
 
@@ -14,7 +15,7 @@ export const Footer =() => {
 					<div className='col-10 col-md-5 col-xl-5 contact-box'>
 						<p className='contact-box__info'>Email: <span className='contact-box__info__bold'>piotrsliwka333@gmail.com</span></p>
 						<p className='contact-box__info'>Full Name: <span className={'contact-box__info__bold'}>Piotr Śliwka</span></p>
-						<p className='contact-box__info' >Download <a className='contact-box__info__bold' href='../../../images/CV_Piotr_Śliwka%20(2).pdf' download>CV</a></p>
+						<p className='contact-box__info' >Download <a className='contact-box__info__bold' href={CVFile} download>CV</a></p>
 					</div>
 					<div className='col-10 col-md-5 col-xl-5 contact-box'>
 						<a className='contact-box__social' target='_blank' href='https://www.linkedin.com/in/piotr-%C5%9Bliwka/'>

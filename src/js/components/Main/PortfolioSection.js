@@ -1,6 +1,10 @@
 import React, {useState} from "react";
 import {PortfolioProject} from "./PortfolioProject";
-
+import covid19Photo from '../../../images/convid19.png';
+import bestShopPhoto from '../../../images/BestShop.png';
+import lumberPhoto from '../../../images/Lumber.png';
+import mealPhoto from '../../../images/Schedule your meal.png'
+import portfolioPhoto from '../../../images/peter.png'
 
 export const PortfolioSection = () => {
 	const [covid,setCovid] = useState(false)
@@ -53,7 +57,7 @@ export const PortfolioSection = () => {
 													  linkGithub={'https://github.com/piotrsliwka333/Project-COVID19'}
 													  show={handleShowCovid}
 													  hide={handleHideCovid}
-													  picture={'convid19.png'}
+													  picture={covid19Photo}
 					/>
 					<PortfolioProject project={bestShop}
 					                  technologies={'SASS/REACT/RWD/GULP'}
@@ -61,7 +65,7 @@ export const PortfolioSection = () => {
 					                  linkGithub={'https://github.com/piotrsliwka333/03-CL-WorkShop-RWD'}
 					                  show={handleShowBestShop}
 					                  hide={handleHideBestShop}
-					                  picture={'BestShop.png'}
+					                  picture={bestShopPhoto}
 					/>
 					<PortfolioProject project={lumber}
 					                  technologies={'SASS/REACT/RWD/GULP'}
@@ -69,7 +73,7 @@ export const PortfolioSection = () => {
 					                  linkGithub={'https://github.com/piotrsliwka333/Homemade-Lumber-Project'}
 					                  show={handleShowLumber}
 					                  hide={handleHideLumber}
-					                  picture={'Lumber.png'}
+					                  picture={lumberPhoto}
 					/>
 					<PortfolioProject project={meal}
 					                  technologies={'SASS/REACT/RWD/GULP'}
@@ -77,7 +81,7 @@ export const PortfolioSection = () => {
 					                  linkGithub={'https://github.com/piotrsliwka333/Project-COVID19'}
 					                  show={handleShowMeal}
 					                  hide={handleHideMeal}
-					                  picture={'Schedule%20your%20meal.png'}
+					                  picture={mealPhoto}
 					/>
 					<PortfolioProject project={portfolio}
 					                  technologies={'SASS/REACT/RWD/GULP'}
@@ -85,7 +89,7 @@ export const PortfolioSection = () => {
 					                  linkGithub={'https://github.com/piotrsliwka333/Portfolio-management-page'}
 					                  show={handleShowPortfolio}
 					                  hide={handleHidePortfolio}
-					                  picture={'peter.png'}
+					                  picture={portfolioPhoto}
 					/>
 				</div>
 			</div>

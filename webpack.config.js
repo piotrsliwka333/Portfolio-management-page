@@ -56,8 +56,10 @@ module.exports = {
 					'sass-loader'
 				]
 			},
+	// 		publicPath: `./src/images/`,
+	// outputPath: `src/images/`
 			{
-				test: /\.(jpe?g|gif|png|svg)$/,
+				test: /\.(jpe?g|gif|png|svg|pdf)$/,
 				loader: "file-loader",
 				options: {
 					name: "[name].[ext]",

@@ -4,6 +4,7 @@ import {AboutSecondSliderElement} from "./AboutSecondSliderElement";
 import {AboutSecondSlider} from "./AboutSecondSlider";
 import {AboutSecondAboutMe} from "./AboutSecondAboutMe";
 import {AboutSecondCertificate} from "./AboutSecondCertificate";
+import programer from '../../../images/programer.png'
 
 export const AboutSecondSection = () => {
 
@@ -44,7 +45,7 @@ export const AboutSecondSection = () => {
 								</a>
 							</div>
 						</div>
-						<img src='../../../images/programer.png' alt='men who is programing' className='programing'/>
+						<img src={programer} alt='men who is programing' className='programing'/>
 					</div>
 				</div>
 			</div>
