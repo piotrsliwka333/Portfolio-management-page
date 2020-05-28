@@ -53,7 +53,7 @@ export const PortfolioSection = () => {
 				<div className='row'>
 					<PortfolioProject project={covid}
 														technologies={'SASS/REACT/ES6/REACT ROUTER/RWD/WEBPACK'}
-														linkLive={'https://github.com/piotrsliwka333/Project-COVID19'}
+														linkLive={'https://piotrsliwka333.github.io/Project-COVID19/#/'}
 													  linkGithub={'https://github.com/piotrsliwka333/Project-COVID19'}
 													  show={handleShowCovid}
 													  hide={handleHideCovid}
@@ -69,7 +69,7 @@ export const PortfolioSection = () => {
 					/>
 					<PortfolioProject project={lumber}
 					                  technologies={'SASS/REACT/RWD/GULP'}
-					                  linkLive={'https://github.com/piotrsliwka333/Project-COVID19'}
+					                  linkLive={'https://piotrsliwka333.github.io/Homemade-Lumber-Project/#/'}
 					                  linkGithub={'https://github.com/piotrsliwka333/Homemade-Lumber-Project'}
 					                  show={handleShowLumber}
 					                  hide={handleHideLumber}
