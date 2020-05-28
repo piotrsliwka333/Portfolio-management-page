@@ -69,11 +69,15 @@
             text-align: center;
             text-shadow: 1px 1px 3px black;
             width: 60%;
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: #1dd1a1;
             font-weight: bold;
             margin: 20px 0;
             line-height: 3rem;
+
+            @include tablet {
+              font-size: 2rem;
+            }
           }
 
           &__btn {
@@ -89,7 +93,7 @@
             font-size: 1.7rem;
             border: 2px solid #38ada9;
             font-weight: bold;
-            color: black;
+            color: lightgrey;
 
             &:hover {
               background-color: #1dd1a1;
