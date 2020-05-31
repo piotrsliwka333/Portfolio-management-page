@@ -24,9 +24,11 @@ const App = () => {
 		<>
 			{dataLoading ? <LoadingScreen/> : (
 				<>
-					<Navigation/>
-					<Main/>
-					<Footer/>
+					<BrowserRouter>
+						<Navigation/>
+						<Main/>
+						<Footer/>
+					</BrowserRouter>
 				</>
 			)}
 		</>

@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import {HashLink} from 'react-router-hash-link';
 import {Link as LinkScroll} from "react-scroll"
-import {BrowserRouter, HashRouter} from "react-router-dom";
+import {BrowserRouter, HashRouter, Link} from "react-router-dom";
 import {DesktopNavigationElement} from "./DesktopNavigationElement";
 
 export const DesktopNavigation = () => {
@@ -9,10 +9,9 @@ export const DesktopNavigation = () => {
 
 	return (
 		<header className="desktop-header">
-			<HashRouter>
-			<a href='/' className='desktop-logo'>
+			<Link to={'/'} className='desktop-logo'>
 				<i className="fas fa-head-side-virus"/>
-			</a>
+			</Link>
 			<nav className='desktop-navigation'>
 				<ul className="desktop-navigation__list">
 					<DesktopNavigationElement name='Home' duration={300} direction='home'/>
@@ -21,7 +20,6 @@ export const DesktopNavigation = () => {
 					<DesktopNavigationElement name='Contact' duration={300} direction='contact'/>
 				</ul>
 			</nav>
-			</HashRouter>
 		</header>
 	)
 }
