@@ -48,6 +48,7 @@
         }
 
         &__description {
+          border: 2px solid green;
           cursor: pointer;
           transition: 0.5s;
           background-color: rgba(0,0,0,0.6);
@@ -62,21 +63,32 @@
           position: absolute;
 
           &__title {
-            font-size: 2rem;
+            font-size: 1.8rem;
+            color: lightgrey;
+            font-weight: 600;
+            text-shadow: 1px 1px 3px black;
+            @include tablet {
+              font-size: 2.5rem;
+            }
           }
 
           &__technologies {
             text-align: center;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-self: center;
             text-shadow: 1px 1px 3px black;
-            width: 60%;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             color: #1dd1a1;
             font-weight: bold;
-            margin: 20px 0;
-            line-height: 3rem;
+            margin: 9px 0;
+            line-height: 2rem;
 
             @include tablet {
+              line-height: 3rem;
               font-size: 2rem;
+              margin: 20px 0;
             }
           }
 
@@ -85,15 +97,20 @@
             transition: 0.5s;
             cursor: pointer;
             margin: 0 10px;
-            width: 100px;
-            height: 40px;
+            width: 80px;
+            height: 30px;
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            font-size: 1.7rem;
+            font-size: 1.4rem;
             border: 2px solid #38ada9;
             font-weight: bold;
             color: lightgrey;
+            @include tablet {
+              width: 100px;
+              height: 40px;
+              font-size: 1.4rem;
+            }
 
             &:hover {
               background-color: #1dd1a1;

@@ -52,44 +52,49 @@ export const PortfolioSection = () => {
 			<div className='container'>
 				<div className='row'>
 					<PortfolioProject project={covid}
-														technologies={'SASS/REACT/ES6/REACT ROUTER/RWD/WEBPACK'}
+														technologies={'JavaScript(ES6)/Sass/React/ ReactRouter/RWD/WebPack /RestAPI/JSONSever'}
 														linkLive={'https://piotrsliwka333.github.io/Project-COVID19/#/'}
 													  linkGithub={'https://github.com/piotrsliwka333/Project-COVID19'}
 													  show={handleShowCovid}
 													  hide={handleHideCovid}
 													  picture={covid19Photo}
+													  projectName={'Covid19 guide'}
 					/>
 					<PortfolioProject project={bestShop}
-					                  technologies={'SASS/REACT/RWD/GULP'}
+					                  technologies={'/SASS/JS/RWD/GULP/'}
 					                  linkLive={'https://piotrsliwka333.github.io/03-CL-WorkShop-RWD/'}
 					                  linkGithub={'https://github.com/piotrsliwka333/03-CL-WorkShop-RWD'}
 					                  show={handleShowBestShop}
 					                  hide={handleHideBestShop}
 					                  picture={bestShopPhoto}
+					                  projectName={'BestShop'}
 					/>
 					<PortfolioProject project={lumber}
-					                  technologies={'SASS/REACT/RWD/GULP'}
+					                  technologies={'JavaScript(ES6)/Sass/React /RWD/WebPack/FireBase'}
 					                  linkLive={'https://piotrsliwka333.github.io/Homemade-Lumber-Project/#/'}
 					                  linkGithub={'https://github.com/piotrsliwka333/Homemade-Lumber-Project'}
 					                  show={handleShowLumber}
 					                  hide={handleHideLumber}
 					                  picture={lumberPhoto}
+					                  projectName={'Homemade Lumber'}
 					/>
 					<PortfolioProject project={meal}
-					                  technologies={'SASS/REACT/RWD/GULP'}
-					                  linkLive={'https://github.com/piotrsliwka333/Project-COVID19'}
-					                  linkGithub={'https://github.com/piotrsliwka333/Project-COVID19'}
+					                  technologies={'JavaScript(ES6)/Sass/React /RWD/WebPack/React Router/FireBase/BootStrap'}
+					                  linkLive={'https://piotrsliwka333.github.io/schedule-your-meal/'}
+					                  linkGithub={'https://github.com/piotrsliwka333/schedule-your-meal'}
 					                  show={handleShowMeal}
 					                  hide={handleHideMeal}
 					                  picture={mealPhoto}
+					                  projectName={'Schedule Your Meal'}
 					/>
 					<PortfolioProject project={portfolio}
-					                  technologies={'SASS/REACT/RWD/GULP'}
+					                  technologies={'Sass/React/RWD/JavaScript(ES6) /WebPack/React Router'}
 					                  linkLive={'https://piotrsliwka333.github.io/Portfolio-management-page/'}
 					                  linkGithub={'https://github.com/piotrsliwka333/Portfolio-management-page'}
 					                  show={handleShowPortfolio}
 					                  hide={handleHidePortfolio}
 					                  picture={portfolioPhoto}
+					                  projectName={'Portfolio site'}
 					/>
 				</div>
 			</div>

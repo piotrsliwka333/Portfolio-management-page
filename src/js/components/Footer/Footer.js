@@ -1,5 +1,5 @@
 import React from "react";
-import CVFile from '../../../images/CV_Piotr_Śliwka (2).pdf'
+import CVFile from '../../../images/Piotr.Sliwka_CV.pdf'
 
 export const Footer =() => {
 

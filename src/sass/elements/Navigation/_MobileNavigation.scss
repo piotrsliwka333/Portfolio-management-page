@@ -14,7 +14,7 @@
   .mobile-logo {
     color: lightgray;
     display: block;
-    font-size: 30px;
+    font-size: 3rem;
     padding: 10px;
   }
 
@@ -79,16 +79,18 @@
   }
 
   .mobile-navigation {
-    z-index: 1000;
+    z-index: 1;
     position: absolute;
     border-top: 3px solid $navigation-list-background;
     border-right: 3px solid $navigation-list-background;
     border-bottom: 3px solid $navigation-list-background;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.7);
 
-    width: 80vw;
+    width: 100%;
+    height: 100vh;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
     color: #cccccc;
-    left: -80vw;
+    left: -100vw;
     top: 0;
     flex-direction: column;
     animation-duration: 0.3s;
@@ -106,12 +108,13 @@
         width: 100%;
       }
       &-element {
+        transition: 0.7s;
         cursor: pointer;
         width: 100%;
         text-align: center;
         display: block;
-        padding: 20px 0;
-        font-size: 2rem;
+        padding: 40px 0;
+        font-size: 2.5rem;
         color: $navigation-list-element-color;
         border-bottom: 2px solid #151515;
       }
@@ -131,10 +134,10 @@
     //slide from left animation
     @keyframes slideShow {
       0% {
-        left: -80vw;
+        left: -100vw;
       }
       100% {
-        left: -1vw;
+        left: 0;
       }
     }
     @keyframes slideHide {
@@ -142,7 +145,7 @@
         left: 0;
       }
       100% {
-        left: -80vw;
+        left: -100vw;
       }
 
     }

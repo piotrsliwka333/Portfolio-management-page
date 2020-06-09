@@ -3,7 +3,7 @@ import {PortfolioProjectOverview} from "./PortfolioProjectOverview";
 
 
 export const PortfolioProject = (props) => {
-	const {picture,show,hide,technologies,linkLive,linkGithub,project} = props
+	const {picture,show,hide,technologies,linkLive,linkGithub,project,projectName} = props
 
 
 	return (
@@ -11,7 +11,7 @@ export const PortfolioProject = (props) => {
 			<figure className='project-box__container'>
 				<img src={picture} className="project-box__container__photo"/>
 			</figure>
-			{project && <PortfolioProjectOverview
+			{project && <PortfolioProjectOverview projectName={projectName}
 				linkLive={linkLive} linkGithub={linkGithub} technologies={technologies}/>}
 		</div>
 	)
