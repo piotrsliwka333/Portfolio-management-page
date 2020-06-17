@@ -5,8 +5,10 @@ import {MobileNavigationElement} from "./MobileNavigationElement";
 import {HashRouter, Link} from "react-router-dom";
 export const MobileNavigation = () => {
 	const [menuOpen,setMenuOpen] = useState(false)
+	const [animationBegin,setAnimationBegin] = useState(false)
 
 	const handleOpenMenu = () => {
+		setAnimationBegin(true)
 		if(!menuOpen) {
 			setMenuOpen(true)
 		} else {
@@ -16,7 +18,7 @@ export const MobileNavigation = () => {
 
 
 	const style = { //here we switch animation of smooth hide or smooth show
-		animationName: menuOpen ? 'slideShow' : 'slideHide'
+		animationName: animationBegin ?  menuOpen ? 'slideShow' : 'slideHide' : ''
 	}
 
 	return (
