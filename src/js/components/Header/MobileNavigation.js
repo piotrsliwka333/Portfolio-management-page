@@ -23,9 +23,9 @@ export const MobileNavigation = () => {
 
 	return (
 		<header className="mobile-header">
-				<a href={'/'} className='mobile-logo'>
+				<Link className='mobile-logo' to={'/'}>
 					<i className="fas fa-head-side-virus"/>
-				</a>
+				</Link>
 				<div onClick={handleOpenMenu} className={ menuOpen ? 'hamburger-container open' : 'hamburger-container'}>
 					<div className="hamburger"/>
 				</div>

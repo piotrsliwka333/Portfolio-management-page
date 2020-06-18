@@ -9,7 +9,7 @@ export const DesktopNavigation = () => {
 
 	return (
 		<header className="desktop-header">
-			<Link to={'/'} className='desktop-logo'>
+			<Link to={'/home'} className='desktop-logo'>
 				<i className="fas fa-head-side-virus"/>
 			</Link>
 			<nav className='desktop-navigation'>
