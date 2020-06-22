@@ -80,7 +80,7 @@ export const PortfolioSection = () => {
 					/>
 					<PortfolioProject project={meal}
 					                  technologies={'JavaScript(ES6)/Sass/React /RWD/WebPack/React Router/FireBase/BootStrap'}
-					                  linkLive={'https://piotrsliwka333.github.io/schedule-your-meal/'}
+					                  linkLive={'https://schedule-your-meal.web.app/'}
 					                  linkGithub={'https://github.com/piotrsliwka333/schedule-your-meal'}
 					                  show={handleShowMeal}
 					                  hide={handleHideMeal}
