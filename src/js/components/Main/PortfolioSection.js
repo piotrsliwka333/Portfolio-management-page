@@ -71,7 +71,7 @@ export const PortfolioSection = () => {
 					/>
 					<PortfolioProject project={lumber}
 					                  technologies={'JavaScript(ES6)/Sass/React /RWD/WebPack/FireBase'}
-					                  linkLive={'https://piotrsliwka333.github.io/Homemade-Lumber-Project/#/'}
+					                  linkLive={'https://homemade-lumber.web.app/#/'}
 					                  linkGithub={'https://github.com/piotrsliwka333/Homemade-Lumber-Project'}
 					                  show={handleShowLumber}
 					                  hide={handleHideLumber}
