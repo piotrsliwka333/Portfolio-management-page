@@ -32,7 +32,7 @@ export const MobileNavigation = () => {
 				<nav style={style} className={'mobile-navigation'}>
 					<ul className="mobile-navigation__list">
 						<MobileNavigationElement name='Home' duration={300} openMenu={handleOpenMenu} direction='home'/>
-						<MobileNavigationElement name='About' duration={300} openMenu={handleOpenMenu} direction='about'/>
+						<MobileNavigationElement name='About' duration={300} openMenu={handleOpenMenu} direction='portfolio'/>
 						<MobileNavigationElement name='Portfolio' duration={300} openMenu={handleOpenMenu} direction='portfolio'/>
 						<MobileNavigationElement name='Contact' duration={300} openMenu={handleOpenMenu} direction='contact'/>
 					</ul>

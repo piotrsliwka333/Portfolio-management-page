@@ -15,7 +15,7 @@ export const DesktopNavigation = () => {
 			<nav className='desktop-navigation'>
 				<ul className="desktop-navigation__list">
 					<DesktopNavigationElement name='Home' duration={300} direction='home'/>
-					<DesktopNavigationElement name='About' duration={300} direction='about'/>
+					<DesktopNavigationElement name='About' duration={300} direction='portfolio'/>
 					<DesktopNavigationElement name='Portfolio' duration={300} direction='portfolio'/>
 					<DesktopNavigationElement name='Contact' duration={300} direction='contact'/>
 				</ul>

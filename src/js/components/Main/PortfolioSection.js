@@ -4,7 +4,7 @@ import covid19Photo from '../../../images/convid19.png';
 import bestShopPhoto from '../../../images/BestShop.png';
 import lumberPhoto from '../../../images/Lumber.png';
 import mealPhoto from '../../../images/Schedule your meal.png'
-import portfolioPhoto from '../../../images/peter.png'
+import portfolioPhoto from '../../../images/portfolio-site.png'
 
 export const PortfolioSection = () => {
 	const [covid,setCovid] = useState(false)

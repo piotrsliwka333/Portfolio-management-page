@@ -11,8 +11,8 @@ export const Main = () => {
 	return (
 		<main>
 			<HomeSection/>
-			<AboutFirstSection/>
-			<AboutSecondSection/>
+			{/*<AboutFirstSection/>*/}
+			{/*<AboutSecondSection/>*/}
 			<PortfolioSection/>
 		</main>
 	)

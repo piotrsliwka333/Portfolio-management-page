@@ -10,7 +10,7 @@ export const HomeSection = () => {
 			<div className="stars2"/>
 			<div className="home-text-container">
 				<h1 className="home-title">Hi, My name is <span className="contrast">Piotr Śliwka</span></h1>
-				<LinkScroll to='about' className='home-box'>
+				<LinkScroll to='portfolio' className='home-box'>
 					<p className="home-text">and...</p>
 					<div className='home-arrow'>
 						<span>
